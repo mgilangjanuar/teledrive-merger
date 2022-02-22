@@ -15,14 +15,13 @@
     "typescript": "^4.5.5"
   },
   "bin": {
-    "teledrive-merger": "node dist/index.js"
+    "teledrive-merger": "dist/index.js"
   },
   "preferGlobal": true,
   "scripts": {
-    "start": "node .",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "M Gilang Januar",
   "license": "ISC"
 }

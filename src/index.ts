@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { program } from 'commander'
 import fs from 'fs'
 
@@ -7,8 +9,8 @@ program
   .description('Merges huge files')
 
 program
-  .option('-i, --input <files...>', 'Input all file parts')
-  .option('-o, --output <file>', 'Output file')
+  .requiredOption('-i, --input <files...>', 'Input all file parts')
+  .requiredOption('-o, --output <file>', 'Output file')
   .action(async ({ input, output }) => {
     console.log('Start...')
     try {
